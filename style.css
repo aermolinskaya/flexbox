@@ -1,0 +1,69 @@
+/* CSS files add styling rules to your content */
+
+main {
+  height: 1200px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+}
+
+div:nth-child(-n+3) {   padding: 90px 50px; }
+div:nth-child(4) {   padding: 0px 260px; }
+div:nth-child(5) {   padding: 0px 240px; }
+div:nth-child(7) {   padding: 20px 10px; }
+div:nth-child(8) {   padding: 30px 5px; }
+div:nth-child(9) {   padding: 20px 10px; }
+
+div:nth-child(11) {
+  flex-grow: 1;
+  margin: 10px;
+}
+div:nth-child(12) {
+  flex-grow: 2;
+  margin: 10px;
+}
+
+div.last_block {
+  height: 200px;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: flex-end
+}
+
+div.last_block > div {
+  padding: 0px;
+  height: 30px;
+  display: flex;
+}
+
+div.last_block > div:nth-child(1) {
+  align-self: flex-end;
+  flex: 1 5 100px;
+}
+div.last_block > div:nth-child(2) {
+  align-self: center;
+  flex: 3 3 100px;
+}
+div.last_block > div:nth-child(3) {
+  align-self: flex-start;
+  flex: 1 5 100px;
+}
